@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class
+		name="com.hexaware.hibernateexamplewithhbmfile.entity.Seller"
+		table="seller" catalog="sample">
+		<id name="sellerId" type="java.lang.Long">
+			<column name="sellerid" />
+			<generator class="identity" />
+		</id>
+		<property name="sellerName" type="java.lang.String">             
+            <column name="sellername" length="50" />         
+        </property> 
+        <property name="sellerEmail" type="java.lang.String">             
+            <column name="selleremail" length="50" />         
+        </property> 
+	</class>
+
+</hibernate-mapping>
